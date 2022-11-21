@@ -9,8 +9,9 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common pb stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+
+# Inherit common product files.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from veux device
 $(call inherit-product, device/xiaomi/veux/device.mk)
